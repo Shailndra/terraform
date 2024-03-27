@@ -8,7 +8,8 @@ resource "aws_instance" "ec2-2" {
     ami = "ami-0d7a109bf30624c99"
 }
 
-# Create a new host with instance type of c5.18xlarge with Auto Placement
+/*
+# Create a new host with instance type of t2.small with Auto Placement
 # and Host Recovery enabled.
 resource "aws_ec2_host" "ec2-test" {
   instance_type     = "t2.small"
@@ -26,3 +27,4 @@ resource "aws_ec2_host" "test-ec2" {
 data "aws_ec2_host" "test" {
   host_id = aws_ec2_host.test-ec2.id
 }
+*/

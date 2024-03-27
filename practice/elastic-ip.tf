@@ -11,6 +11,7 @@ resource "aws_vpc_security_group_ingress_rule" "random" {
     to_port = 443
 }
 
+/*
 resource "aws_vpc_security_group_ingress_rule" "http_port" {
     security_group_id = aws_security_group.http_port.id
     cidr_ipv4 = "${aws_eip.lb.public_ip}/32"     #cross-referencing attibutes with string interpolation
@@ -34,3 +35,4 @@ resource "aws_vpc_security_group_ingress_rule" "ftp_port" {
     ip_protocol = "tcp"
     to_port = var.ftp_port
 }
+*/
