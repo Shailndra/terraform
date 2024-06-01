@@ -1,1 +1,4 @@
+$PWD/terraform/3tier-lb-eks-deployment/.terraform/*
+$PWD/terraform/practice/.terraform/*
+$PWD/terraform/project-aws/.terraform/*
 practice/.terraform/*
