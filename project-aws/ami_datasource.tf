@@ -6,7 +6,7 @@ data "aws_ami" "amzlinux" {
 
   filter {
     name   = "name"
-    values = ["amzn2-ami-kernel-5.10-hvm-*-gp2"]
+    values = ["ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-*"]
   }
 
   filter {
@@ -21,6 +21,6 @@ data "aws_ami" "amzlinux" {
 
   filter {
     name   = "architecture"
-    values = ["x86_84"]
+    values = ["x86_64"]
   }
 }
