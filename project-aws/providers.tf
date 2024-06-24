@@ -1,4 +1,4 @@
-terraform {  
+terraform {
   required_version = "~> 1.7"
   required_providers {
     aws = {
@@ -9,6 +9,6 @@ terraform {
 }
 
 provider "aws" {
-  region = var.aws_region
+  region  = var.aws_region
   profile = "default"
 }
